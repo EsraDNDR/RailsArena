@@ -1,4 +1,10 @@
 RailsArena::Application.routes.draw do
+  get "users/signup"
+
+  root to: "railsarena#home"
+
+  match '/help', to:"railsarena#help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
